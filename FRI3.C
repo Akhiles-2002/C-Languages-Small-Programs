@@ -1,0 +1,4 @@
+/*
+factorial by for loop :
+
+*/
