@@ -1,60 +1,50 @@
 /*
-1- menu - name
-2- day
-marskheet of any student
+13/04/2021
+------------------
+chapter 2:
+control structure  :
+control structure are just a way to specify flow of control in program.
+1- conditional programming
+2- branching
+3- looping
+1- conditional programming
+if : It is used to conditional programming.
+ types of if
+ i- if
+ ii- if else
+ iii- else if ladder
+ iv- nested if
+----------------------
+i- if
+->To check condition
+->If condition is true then if block executes.
+->If condition false statement ignore
+syntax:
+if(condition)
+{
+ statement;
+}
+
+wap in c which test number is greater or not
 */
 #include<stdio.h>
 #include<conio.h>
 void main()
 {
-int roll,h,e,m,sc,sst,t;
-float per;
-char name[20];
+int a,b;
 clrscr();
-printf("Enter roll  ");
-scanf("%d",&roll);
-printf("Enter name  ");
-scanf("%s",name);
-printf("Enter marks of hindi ");
-scanf("%d",&h);
-printf("Enter marks of english ");
-scanf("%d",&e);
-printf("Enter marks of maths ");
-scanf("%d",&m);
-printf("Enter marks of sc ");
-scanf("%d",&sc);
-printf("Enter marks of sst ");
-scanf("%d",&sst);
-t=h+e+m+sc+sst;
-per=t/5;
-clrscr();
-printf("*****MARKSHEET********\n");
-printf("Roll : %d\n",roll);
-printf("Name : %s\n",name);
-printf("Hindi : %d\n",h);
-printf("English : %d\n",e);
-printf("Maths : %d\n",m);
-printf("Science : %d\n",sc);
-printf("SST : %d\n",sst);
-printf("Total  : %d\n",t);
-printf("Per   :%.2f\n",per);
-if(per>=60)
+printf("\n\n\n\nEnter value of a ");
+scanf("%d",&a);
+printf("Enter value of b ");
+scanf("%d",&b);
+if(a>b)
 {
-printf("Div    : First\n");
+ printf("A is greater than B");
 }
-else if(per<60&&per>=45)
-{
-printf("Div : Second \n");
-}
-else if(per<45&&per>=33)
-{
-printf("Div  : Third \n");
-}
-else
-{
-printf("Div : Fail \n");
-}
+
 
 
 getch();
+
 }
+

@@ -1,0 +1,16 @@
+fseek() function
+The fseek() function is used to set the file pointer to 
+the specified offset. It is used to write data into 
+file at desired location.
+-----------------------------------
+#include <stdio.h>  
+void main(){  
+   FILE *fp;  
+  
+   fp = fopen("myfile.txt","w+");  
+   fputs("This is javatpoint", fp);  
+    
+   fseek( fp, 7, SEEK_SET );  
+   fputs("sonoo jaiswal", fp);  
+   fclose(fp);  
+}

@@ -1,58 +1,41 @@
 /*
-wap in c which print add/sub/div/mul/rem according to choice
+ii- if  else
+->To check condition
+->If condition is true then if block executes.
+->If condition false then else block execute
+syntax:
+if(condition)
+{
+ statement1;
+}
+else
+{
+ st2;
+}
+
+wap in c which test number is greater or not
 */
 #include<stdio.h>
 #include<conio.h>
-#include<stdlib.h>
 void main()
 {
- int a,b,c,choice;
- clrscr();
- printf("Enter value of a \n");
- scanf("%d",&a);
- printf("Enter value of b \n");
- scanf("%d",&b);
- printf("\n*********Mathemetical Operation*********\n");
- printf("1- Add\n");
- printf("2- Sub\n");
- printf("3-Mul\n");
- printf("4-Div\n");
- printf("5-Rem\n");
- printf("6-Exit\n");   //stdlib.h pocess.h
- printf("Enter your choice ");
- scanf("%d",&choice);
- if(choice==1)
- {
- c=a+b;
-printf("Addition  : %d\n",c);
- }
- else if(choice==2)
- {
- c=a-b;
-printf("Subtraction  : %d\n",c);
- }
- else if(choice==3)
- {
- c=a*b;
-printf("Multilication  : %d\n",c);
- }
- else if(choice==4)
- {
- c=a/b;
-printf("Division  : %d\n",c);
- }
- else if(choice==5)
- {
- c=a%b;
-printf("Remainder  : %d\n",c);
- }
- else if(choice==6)
- {
- exit(0);
- }
- else
- {
- printf("Invalid choice  ");
- }
- getch();
+int a,b;
+clrscr();
+printf("\n\n\n\nEnter value of a ");
+scanf("%d",&a);
+printf("Enter value of b ");
+scanf("%d",&b);
+if(a>b)
+{
+ printf("A is greater than B");
 }
+else
+{
+printf("B is greater than A");
+}
+
+
+getch();
+
+}
+
